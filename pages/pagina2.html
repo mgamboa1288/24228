@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <style>
+        /* Estilos del header (incluidos los anteriores) */
+        header {
+            background-color: #f5f5dc; /* Beige */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+        }
+
+        header h1 {
+            color: #333;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header h2 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        header nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        header nav a:hover {
+            background-color: #e0d9b6;
+            color: #000;
+        }
+
+        /* Estilos para el carrusel de imágenes */
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: space-around;
+            animation: slide 10s linear infinite;
+        }
+
+        .carousel img {
+            width: 600px;
+            height: 400px;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animación del carrusel */
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Repetir las imágenes para que el loop sea continuo */
+        .carousel-container .carousel {
+            width: calc(300px * 3); /* Ajustar al número de imágenes duplicadas */
+        }
+    </style>
+</head>
+<body>
+
+<header id="Inicio">
+    <h1>E&M Suplementos Deportivos</h1>
+    <h2>Como te ven te tratan, y si te ven mal te maltratan</h2>
+    
+    <nav>
+        <a href="./Tienda.html" target="_blank">Tienda</a>
+        <a href="#Quienes Somos">Quienes somos</a>
+        <a href="#Nuestros Productos">Productos</a>
+        <a href="#Medios de Pago">Medios de pago</a>
+        <a href="#Envíos">Envíos</a>
+        <a href="#Contacto">Contactanos</a>
+        <a href="#Ubicación" target="_blank">Ubicación</a>
+    </nav>
+</header>
+
+<!-- Carrusel de Imágenes -->
+<div class="carousel-container">
+    <div class="carousel">
+        <img src="../assets/images/aliya-amangeldi-RPjF4KKeEOQ-unsplash.jpg" alt="Imagen 1">
+        <img src="../assets/images/alliance-football-club-F-SN9vieh_Y-unsplash.jpg" alt="Imagen 2">
+        <img src="../assets/images/alora-griffiths-WiKEnlt6Z3U-unsplash.jpg" alt="Imagen 3">
+        <!-- Imágenes duplicadas para loop infinito -->
+        <img src="../assets/images/anes-hamzic-_grnnrAR0wg-unsplash.jpg" alt="Imagen 1">
+        <img src="../assets/images/bruno-nascimento-PHIgYUGQPvU-unsplash.jpg" alt="Imagen 2">
+        <img src="../assets/images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="Imagen 3">
+    </div>
+</div>
+
+<main>
+                
+    <div id="Quienes Somos">
+        <h2>Quienes somos</h2>
+        <p>Somos Esmilce y Maximiliano, una pareja apasionada por el deporte y el bienestar. 
+            Desde siempre hemos creído en la importancia de un estilo de vida activo y saludable, no solo 
+            para mejorar el rendimiento físico, sino para encontrar equilibrio en la vida diaria.</p>
+        
+        <p>Este camino nos llevó a crear nuestro emprendimiento, donde combinamos nuestra pasión por la 
+            actividad física con la idea de ofrecer productos que realmente apoyen a las personas en sus 
+            objetivos. Desde suplementos de alta calidad que cuidan de tu salud, hasta ropa deportiva 
+            cómoda y moderna, cada producto está pensado para acompañarte en cada paso de tu camino fitness.</p>
+        
+        <p>Nos motiva poder ayudar a nuestra comunidad a alcanzar sus metas, ya sea en el gimnasio, en la pista 
+            o simplemente en el día a día. Creemos en la perseverancia, la dedicación y, sobre todo, 
+            en el poder de sentirse bien con uno mismo.</p>
+
+        <p>Estamos aquí para motivarte, para impulsarte y para asegurarnos de que tengas los mejores productos en 
+            tu mano para seguir superando tus propios límites.</p>
+        
+        <p>¡Gracias por confiar en nosotros!</p>
+
+        <img src="./assets/images/alora-griffiths-WiKEnlt6Z3U-unsplash.jpg" width="50%" height="50%" alt="">
+    </div>
+
+    <div id="Nuestros Productos">
+        <h2>Nuestros Productos</h2>
+        <h3>Suplementos deportivos</h3>
+        <p>Nuestros suplementos están diseñados para quienes buscan maximizar su rendimiento físico y 
+            obtener los mejores resultados en sus entrenamientos. Ofrecemos una gama de productos 
+            esenciales, como proteínas de suero, creatina y aminoácidos, formulados para apoyar el 
+            desarrollo muscular, la recuperación y el aumento de energía. Cada suplemento que vendemos 
+            es cuidadosamente seleccionado, garantizando la pureza y efectividad que tu cuerpo necesita 
+            para rendir al máximo.</p>
+
+        <img src="./assets/images/howtogym-S9NchuPb79I-unsplash.jpg" width="40%" height="50%" alt="">
+        <img src="./assets/images/lyfefuel-C05u9Xh37to-unsplash.jpg" width="40%" height="50%" alt="">
+            
+        <h3>Ropa deportiva</h3>
+        <p>En nuestra línea de ropa deportiva, combinamos comodidad, diseño y rendimiento. Ofrecemos 
+            remeras y calzas que se adaptan a cualquier tipo de actividad física, desde entrenamientos 
+            intensos hasta ejercicios más relajados. Confeccionadas con materiales transpirables y 
+            resistentes, nuestras prendas te acompañan en cada movimiento, asegurando durabilidad sin 
+            sacrificar el estilo. Todo con una excelente relación precio-calidad, para que puedas lucir 
+            y sentirte bien sin gastar de más.</p>
+        
+        <p>Sabemos que la ropa deportiva no tiene por qué ser costosa para ser buena. Por eso, nuestras 
+            remeras y calzas están diseñadas pensando en ofrecerte lo mejor en términos de calidad, pero 
+            a un precio accesible. Creemos que todos merecen sentirse cómodos y confiados en su ropa de 
+            entrenamiento, y es por eso que trabajamos para que cada pieza cumpla con esos estándares sin 
+            comprometer tu presupuesto.</p>   
+
+            <img src="./assets/images/joseph-antigua-BrW0YeCb-zg-unsplash.jpg" width="40%" height="50%" alt="">
+            <img src="./assets/images/sawyer-bengtson-LTc4dxNEEzU-unsplash.jpg" width="40%" height="50%" alt="">        
+    </div>
+
+    <div id="Medios de Pago">
+        <h2>Medios de pago</h2>
+        <ul>
+            <li>Efectivo o tarjeta en la tienda</li>
+            <li>Débito o crédito en sitio web</li>
+            <li>Transferencias bancarias</li>
+        </ul>
+    </div>
+
+    <div id="Envíos">
+        <h2>Envíos</h2>
+        <p>Realizamos envíos gratuitos a la zona, y al interior por servicio postal</p>
+    </div>
+    
+    <div id="Ubicación">
+        <h2>Donde nos encontrás</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888186423!2d-58.38414532514655!3d-34.603734457497545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1727632144946!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <h2>Formulario de Contacto</h2>
+    <form id="Contacto" method="POST" style="border: 2px solid black; padding: 20px;">
+      
+      <!-- Campo Nombre -->
+      <label for="nombre">Nombre (máx. 30 caracteres):</label>
+      <input type="text" id="nombre" name="nombre" maxlength="30" required>
+      <br><br>
+  
+      <!-- Campo Apellido -->
+      <label for="apellido">Apellido (máx. 30 caracteres):</label>
+      <input type="text" id="apellido" name="apellido" maxlength="30" required>
+      <br><br>
+  
+      <!-- Campo Teléfono -->
+      <label for="telefono">Número de Teléfono (10 dígitos):</label>
+      <input type="text" id="telefono" name="telefono" maxlength="10" pattern="\d{10}" required>
+      <br><br>
+  
+      <!-- Campo E-mail -->
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" maxlength="50" placeholder="usuario@usuario.com" required>
+      <br><br>
+  
+<!--
+Campo Tipo de Documento -->
+<label for="tipoDocumento">Tipo de Documento:</label>
+<select id="tipoDocumento" name="tipoDocumento" required>
+<option value="">Seleccione una opción</option>
+<option value="dni">DNI</option>
+<option value="pasaporte">N° Pasaporte</option>
+<option value="ci">CI</option>
+<option value="ce">CE</option>
+</select>
+<br><br>
+
+<!-- OTROS EJEMPLOS DE DIFERENTES TIPOS DE CAMPOS
+
+Campo Número de Documento
+
+<label for="numeroDocumento">Número de Documento:</label>
+<input type="text" id="numeroDocumento" name="numeroDocumento" pattern="\d+" required>
+<br><br>
+
+Campo Nivel Educativo Alcanzado 
+
+<label for="nivelEducativo">Nivel Educativo Alcanzado:</label>
+<select id="nivelEducativo" name="nivelEducativo" required>
+<option value="">Seleccione una opción</option>
+<option value="primario">Primario</option>
+<option value="secundarioIncompleto">Secundario Incompleto</option>
+<option value="secundarioCompleto">Secundario Completo</option>
+<option value="universitarioCurso">Universitario en Curso</option>
+<option value="universitarioIncompleto">Universitario Incompleto</option>
+<option value="universitarioCompleto">Universitario Completo</option>
+<option value="posgradoCurso">Posgrado en Curso</option>
+<option value="posgradoCompleto">Posgrado Completo</option>
+<option value="doctorado">Doctorado</option>
+</select>
+<br><br>
+
+Campo Conocimientos en Programación
+
+<label>Conocimientos en Programación (opcional):</label><br>
+<input type="checkbox" id="c" name="programacion" value="C">
+<label for="c">C</label><br>
+<input type="checkbox" id="cplus" name="programacion" value="C++">
+<label for="cplus">C++</label><br>
+<input type="checkbox" id="csharp" name="programacion" value="C#">
+<label for="csharp">C#</label><br>
+<input type="checkbox" id="java" name="programacion" value="Java">
+<label for="java">Java</label><br>
+<input type="checkbox" id="javascript" name="programacion" value="JavaScript">
+<label for="javascript">JavaScript</label><br>
+<input type="checkbox" id="python" name="programacion" value="Python">
+<label for="python">Python</label><br>
+<input type="checkbox" id="golang" name="programacion" value="Golang">
+<label for="golang">Golang</label><br>
+<input type="checkbox" id="otros" name="programacion" value="Otros">
+<label for="otros">Otros</label>
+<input type="text" id="otrosLenguaje" name="otrosLenguaje" placeholder="Especifique otro lenguaje">
+<br><br>             
+
+El elemento <br> en HTML significa "salto de línea" o "line break", y su función es insertar un salto de 
+línea en el contenido, es decir, mueve el texto o los elementos que están después del <br> a la siguiente 
+línea. No tiene etiqueta de cierre porque es un elemento vacío, lo que significa que no contiene contenido 
+dentro.
+Cuando se usa <br><br>, lo que estamos haciendo es insertar dos saltos de línea consecutivos, lo cual crea 
+un espacio vertical mayor entre los elementos, similar a presionar "Enter" dos veces en un procesador de 
+textos.
+
+En resumen, en el formulario que te compartí, se usa <br><br> para separar visualmente los distintos 
+campos del formulario, dejando un poco más de espacio entre ellos. 
+
+-->
+      
+      <!-- Campo Descripción (opcional) -->
+      <label for="descripcion">Descripción (opcional, máx. 400 caracteres):</label>
+      <textarea id="descripcion" name="descripcion" maxlength="400" rows="4" cols="50"></textarea>
+      <br><br>
+  
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
+  
+    </form>
+
+</main>
+
+
+</body>
+</html>
